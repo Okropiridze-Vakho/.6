@@ -1,0 +1,158 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #ffff66, #ff00ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .box {
+  width: 85vw;
+  height: 88vh;
+  display: flex;
+  box-shadow: 0px 2px 8px 2px black;
+}
+.container .box .row {
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(to right, #fff, #fff);
+}
+.container .box .row .png {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  transform: translate(180%, -400%);
+}
+.container .box .row #login {
+  width: 41%;
+  height: 83%;
+  background-size: cover;
+  position: absolute;
+}
+.container .box .row #login a {
+  display: block;
+  position: relative;
+  top: 18em;
+  left: 80%;
+  text-decoration: none;
+}
+.container .box .row #login a:hover {
+  color: black;
+}
+.container .box .row h2 {
+  font-size: 40px;
+  text-align: center;
+  color: #0e0d0d;
+  padding-bottom: 40px;
+  position: relative;
+  left: 70%;
+  top: 3em;
+  font-family: sans-serif;
+}
+.container .box .row .fl {
+  width: 165%;
+  position: relative;
+  top: 9em;
+  left: 50%;
+}
+.container .box .row .itpw {
+  width: 92%;
+  padding: 13px 10px;
+  margin: 5px 0px;
+  border: 1px solid #dbdbdb;
+  color: #757575;
+  transition: all 0.7s;
+  border-radius: 2em;
+}
+.container .box .row .its {
+  width: 92%;
+  font-size: 19px;
+  color: #f5f5f5;
+  padding: 12px;
+  margin: 5px 0;
+  background-image: linear-gradient(to right, #ffff66, #ff00ff);
+  border: none;
+  transition: all 0.4s;
+  border-radius: 2em;
+  position: relative;
+  top: 2em;
+}
+.container .box .row .itpw:focus {
+  border-bottom: 3px solid #004d40;
+  color: #004d40;
+}
+.container .box .row .its:hover, .container .box .row .its:focus {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.container .box .row .center p {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+.container .box .row .center p a {
+  color: #757575;
+}
+@media screen and (min-width: 1500px) {
+  .container .box .row .center {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container .box .row #login {
+    background-size: 100% 100%;
+  }
+  .container .box .row .center {
+    width: 40%;
+  }
+  .container .box .row .its {
+    width: 100%;
+  }
+  .container .box .row .itpw {
+    font-size: 14px;
+    width: 90%;
+    padding: 13px 3%;
+  }
+  .container .box .row .center p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .container .box .row .center {
+    padding: 20px;
+    width: 75%;
+  }
+  .container .box .row .center {
+    width: 40%;
+  }
+}
+.container .box .row1 {
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(to right, #ffff66, #ff00ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .box .row1 h1 {
+  width: 50%;
+  height: 12%;
+  color: rgba(255, 255, 255, 0.897);
+  font-family: sans-serif;
+}
+.container .box .row1 h3 {
+  width: 50%;
+  height: 20%;
+  color: rgba(255, 255, 255, 0.623);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */
